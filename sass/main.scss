@@ -1,0 +1,30 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+@import "base/animations";
+@import "base/typography";
+@import "base/base";
+@import "base/utilities";
+
+@import "layout/navbar";
+
+@import "components/titleBlock";
+@import "components/listArticles";
+@import "components/moreBlock";
+@import "components/blockGuerreroRetador";
+
+@import "pages/home/bannerBlock";
+@import "pages/home/gridBlock";
+@import "pages/home/theLastBlock";
+@import "pages/home/socialNetworkBlock";
+@import "pages/home/teamBlock";
+@import "pages/home/exclusiveBlock";
+
+@import "pages/guerreros-retadores/headerGRBlock";
+@import "pages/guerreros-retadores/mostVideosBlock";
+@import "pages/guerreros-retadores/blockGuerreroRetador";
+
+@import "pages/detail-page/headerGRBlock";
+
+@import "layout/footer";

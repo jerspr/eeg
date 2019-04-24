@@ -1,0 +1,26 @@
+.most-video-block{
+  background: #F0F0F0;
+  padding: 40px 0;
+}
+.inner-most-video-block{
+  .item-article{
+    &>a{
+      padding-left: 26px;
+      padding-top: 26px;
+      .inner-item-article{
+        padding: 27px;
+        figure{
+          margin-bottom: 20px;
+          margin-left: -53px;
+          margin-top: -53px;
+        }
+        .info-article{
+          h2{
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

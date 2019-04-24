@@ -1,0 +1,5 @@
+@mixin cardBoxShadow($x, $y, $b, $c1, $c2, $c3, $o){
+  -webkit-box-shadow:  $x $y $b rgba($c1, $c2, $c3, $o);
+  -moz-box-shadow:  $x $y $b rgba($c1, $c2, $c3, $o);
+  box-shadow:  $x $y $b rgba($c1, $c2, $c3, $o);
+}

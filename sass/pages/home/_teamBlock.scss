@@ -1,0 +1,122 @@
+.team-block{
+  padding: 40px 0;
+  background: #fff;
+}
+.bg-team{
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+}
+.item-team{
+  position: relative;
+  figure{
+    padding-left: 95px;
+    a{
+      display: block;
+      position: relative;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  &>a{
+    width: 170px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 74px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 4px;
+    line-height: 60px;
+  }
+  &:active{
+    figure{
+      a{
+        .bg-team{
+          display: block;
+        }
+      }
+    }
+  }
+  &:focus{
+    figure{
+      a{
+        .bg-team{
+          display: block;
+        }
+      }
+    }
+  }
+  &:hover{
+    figure{
+      a{
+        .bg-team{
+          display: block;
+        }
+      }
+    }
+  }
+  &.team-guerrero{
+    &:active{
+      &>a{
+        background: $colorGuerreroHover;
+        text-decoration: none;
+      }
+    }
+    &:focus{
+      &>a{
+        background: $colorGuerreroHover;
+        text-decoration: none;
+      }
+    }
+    &:hover{
+      &>a{
+        background: $colorGuerreroHover;
+        text-decoration: none;
+      }
+    }
+  }
+  &.team-retador{
+    &:active{
+      &>a{
+        background: $colorRetadorHover;
+        text-decoration: none;
+      }
+    }
+    &:focus{
+      &>a{
+        background: $colorRetadorHover;
+        text-decoration: none;
+      }
+    }
+    &:hover{
+      &>a{
+        background: $colorRetadorHover;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.team-guerrero{
+  &>a{
+    background: $colorGuerrero;
+    box-shadow: 5px 5px 0 rgba(241, 214, 48, 1);
+  }
+}
+.team-retador{
+  &>a{
+    background: $colorRetador;
+    box-shadow: 5px 5px 0 rgba(137, 199, 122, 1);
+  }
+}

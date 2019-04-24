@@ -1,0 +1,105 @@
+footer{
+  padding: 20px 0;
+  background: #fff;
+}
+.block-footer{
+  h3{
+    font-size: 14px;
+    color: #616161;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  ul{
+    &.list-menu-f{
+      li{
+        margin-bottom: 3px;
+        a{
+          display: block;
+          font-size: 14px;
+          color: #9E9E9E;
+          &:active,
+          &:focus,
+          &:hover{
+            color: #000000;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+.logo-footer{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #5F5F5F;
+  span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    background: url(../img/logo-at.png?v1) no-repeat;
+    background-size: 28px;
+    background-position: 0 0;
+    margin-right: 8px;
+  }
+  &:active,
+  &:focus,
+  &:hover{
+    color: #FF5000;
+    text-decoration: none;
+    span{
+      background-position: 0 -28px;
+    }
+  }
+}
+.social-footer{
+  display: inline-block;
+  vertical-align: middle;
+  ul{
+    li{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 40px;
+      a{
+        display: block;
+        &.ico-fb{
+          width: 9px;
+          height: 15px;
+          background: url(../img/ico-fb.png?v1) no-repeat;
+          background-size: 9px;
+          background-position: 0 0;
+          &:active,
+          &:focus,
+          &:hover{
+            background-position: 0 -15px;
+          }
+        }
+        &.ico-tw{
+          width: 16px;
+          height: 13px;
+          background: url(../img/ico-tw.png?v1) no-repeat;
+          background-size: 16px;
+          background-position: 0 0;
+          &:active,
+          &:focus,
+          &:hover{
+            background-position: 0 -13px;
+          }
+        }
+        &.ico-it{
+          width: 16px;
+          height: 16px;
+          background: url(../img/ico-it.png?v1) no-repeat;
+          background-size: 16px;
+          background-position: 0 0;
+          &:active,
+          &:focus,
+          &:hover{
+            background-position: 0 -16px;
+          }
+        }
+      }
+    }
+  }
+}

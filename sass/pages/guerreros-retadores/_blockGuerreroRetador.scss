@@ -1,0 +1,16 @@
+.guerrero-retador-block{
+  padding: 40px 0;
+}
+.block-g-r{
+  ul{
+    li{
+      float: left;
+      width: 165px;
+      text-align: center;
+      margin-right: 76px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

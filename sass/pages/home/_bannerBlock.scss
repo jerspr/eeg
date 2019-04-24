@@ -1,0 +1,70 @@
+.banner-block{
+  margin-bottom: 4px;
+}
+.inner-banner-block{
+  position: relative;
+  .name-program{
+    position: absolute;
+    left: 50px;
+    bottom: 120px;
+    width: 300px;
+    h2{
+      font-size: 70px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 100%;
+      margin-bottom: 20px;
+    }
+    span{
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      display: block;
+    }
+  }
+}
+.link-cap{
+  position: absolute;
+  right: 30px;
+  bottom: 206px;
+  background: $colorAmerica;
+  border-radius: 4px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  span{
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/logo-link-tvgo.png?v1) no-repeat;
+    background-position: 0 0;
+    background-size: 65px;
+    width: 65px;
+    height: 28px;
+    margin-right: 10px;
+  }
+  &:focus{
+    text-decoration: none;
+    background: #4A4A4A;
+    color: #fff;
+    span{
+      background-position: 0 -28px;
+    }
+  }
+  &:hover{
+    text-decoration: none;
+    background: #4A4A4A;
+    color: #fff;
+    span{
+      background-position: 0 -28px;
+    }
+  }
+  &:active{
+    text-decoration: none;
+    background: #000000;
+    color: #fff;
+    span{
+      background-position: 0 -28px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.inner-header-gr-detail{
+  padding: 32px 30px 0 30px;
+  p{
+    font-size: 16px;
+    color: #333;
+    line-height: 190%;
+    margin-bottom: 0;
+    margin-top: 7px;
+  }
+}
+.block-perfil-name{
+  float: left;
+}
+.perfil-gr{
+  float: left;
+  margin-right: 30px;
+  figure{
+    margin-bottom: 0;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #4777C6;
+    img{
+      width: 100%;
+    }
+  }
+}
+.name-gr{
+  width: 135px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 5px;
+  h2{
+    margin-bottom: 0;
+    font-size: 28px;
+    color: #333333;
+    line-height: 130%;
+  }
+  span{
+    display: block;
+    font-size: 14px;
+    color: #4777C6;
+  }
+}

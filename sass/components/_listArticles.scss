@@ -1,0 +1,83 @@
+.item-article{
+  margin-bottom: 40px;
+  &>a{
+    padding-left: 18px;
+    padding-top: 18px;
+    display: block;
+    .inner-item-article{
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      @include cardBoxShadow(4px, 4px, 14px, 0, 0, 0, 0.10);
+      figure{
+        margin-bottom: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: -38px;
+        margin-top: -38px;
+        position: relative;
+        img{
+          width: 100%;
+        }
+        .label-exc{
+          position: absolute;
+          bottom: 22px;
+          left: 18px;
+        }
+        .ico-video{
+          position: absolute;
+          right: 16px;
+          bottom: 12px;
+        }
+      }
+      .info-article{
+        h2{
+          font-size: 16px;
+          color: #555555;
+          line-height: 140%;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &:active{
+      text-decoration: none;
+      .inner-item-article{
+        background: #555555;
+        @include cardBoxShadow(4px, 4px, 14px, 0, 0, 0, 0.40);
+        .info-article{
+          h2{
+            color: #fff;
+          }
+        }
+      }
+    }
+    &:focus{
+      text-decoration: none;
+      .inner-item-article{
+        @include cardBoxShadow(4px, 4px, 14px, 0, 0, 0, 0.40);
+      }
+    }
+    &:hover{
+      text-decoration: none;
+      .inner-item-article{
+        @include cardBoxShadow(4px, 4px, 14px, 0, 0, 0, 0.40);
+      }
+    }
+  }
+}
+.label-exc{
+  padding: 0 5px;
+  height: 24px;
+  line-height: 24px;
+  color: rgba(255, 255, 255,0.9);
+  background: #000000;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.ico-video{
+  width: 36px;
+  height: 36px;
+  background: url(../img/ico-video.png?v1) no-repeat;
+  background-size: 100% 100%;
+}
