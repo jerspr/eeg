@@ -35,7 +35,7 @@ gulp.task('eeg-sass', function () {
 });
 
 gulp.task('eeg-plugins-js', function() {
-  return gulp.src(['./vendors/jquery/jquery-3.3.1.js', './vendors/bootstrap/js/popper.js', './vendors/bootstrap/js/bootstrap.js'])
+  return gulp.src(['./vendors/jquery/jquery-3.3.1.js', './vendors/bootstrap/js/popper.js', './vendors/bootstrap/js/bootstrap.js', './vendors/stickit/jquery.stickit.js'])
     .pipe(sourcemaps.init())
     .pipe(concat('plugins.js'))
     .pipe(rename({suffix: '.min'}))

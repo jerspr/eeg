@@ -1,5 +1,5 @@
 .header-gr-block{
-  margin-top: 40px;
+  padding-top: 40px;
 }
 .inner-header-gr-block{
   position: relative;
@@ -14,6 +14,16 @@
     width: 174px;
     height: 145px;
   }
+  &.h-retadores{
+    &>span{
+      background: url(../img/logo-r.png?v1) no-repeat;
+      background-size: 100% 100%;
+      width: 183px;
+      height: 139px;
+      left: 14px;
+      top: 5px;
+    }
+  }
   ul{
     overflow: hidden;
     margin-left: 250px;
@@ -27,11 +37,12 @@
         margin-right: 0;
       }
       .item-gr{
-        width: 92px;
-        height: 92px;
         position: relative;
+        width: 92px;
         figure{
           margin-bottom: 0;
+          width: 92px;
+          height: 92px;
           .bg-g{
             display: block;
           }

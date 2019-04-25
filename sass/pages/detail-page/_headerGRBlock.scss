@@ -10,6 +10,18 @@
 }
 .block-perfil-name{
   float: left;
+  &.p-retador{
+    .perfil-gr{
+      figure{
+        border: 2px solid #FA2821;
+      }
+    }
+    .name-gr{
+      span{
+        color: #FA2821;
+      }
+    }
+  }
 }
 .perfil-gr{
   float: left;
@@ -36,6 +48,7 @@
     font-size: 28px;
     color: #333333;
     line-height: 130%;
+    margin-bottom: 3px;
   }
   span{
     display: block;
