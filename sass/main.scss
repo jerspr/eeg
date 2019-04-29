@@ -10,6 +10,7 @@
 @import "layout/navbar";
 
 @import "components/titleBlock";
+@import "components/searchHeader";
 @import "components/listArticles";
 @import "components/moreBlock";
 @import "components/blockGuerreroRetador";
@@ -26,5 +27,12 @@
 @import "pages/guerreros-retadores/blockGuerreroRetador";
 
 @import "pages/detail-page/headerGRBlock";
+
+@import "pages/nota/headerNotaBlock";
+@import "pages/nota/pageNota";
+@import "pages/nota/relatedBlock";
+@import "pages/nota/pollBlock";
+@import "pages/nota/interestBlock";
+@import "pages/nota/pagePoll";
 
 @import "layout/footer";

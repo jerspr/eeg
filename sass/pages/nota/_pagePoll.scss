@@ -1,0 +1,116 @@
+.list-encuesta-p{
+	background: #F2F2F2;
+	padding: 40px;
+	margin-bottom: 30px;
+	ul{
+		text-align: center;
+		li{
+			display: inline-block;
+			vertical-align: top;
+			width: 90px;
+			margin-left: 28px;
+			margin-right: 28px;
+			figure{
+				width: 90px;
+				margin-bottom: 38px;
+				border-radius: 6px;
+    			overflow: hidden;
+				img{
+					width: 100%;
+				}
+			}
+			em{
+				font-style: normal;
+				font-size: 14px;
+				color: #222222;
+				display: block;
+				text-align: center;
+				line-height: 130%;
+			}
+		}
+	}
+}
+.radio-poll{
+	display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    margin-bottom: 25px;
+	input {
+	  	position: absolute;
+	  	opacity: 0;
+	  	cursor: pointer;
+	  	height: 0;
+	  	width: 0;
+	  	&:checked ~ .checkmark {
+		  	background-color: #2196F3;
+		}
+	}
+	input{
+		&:after {
+		  	content: "";
+		  	position: absolute;
+		  	display: none;
+		}	
+	}
+	input:checked ~ .checkmark:after {
+	  	display: block;
+	}
+	.radiobtn{
+		&:after {
+		  	top: 3px;
+		    left: 3px;
+		    width: 10px;
+		    height: 10px;
+		    border-radius: 50%;
+		    background: #FF5000;
+		}
+	}
+}
+.radiobtn{
+  	position: absolute;
+    top: 100px;
+    left: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #707070;
+    margin-left: -10px;
+  	&:after {
+	  	content: "";
+	  	position: absolute;
+	  	display: none;
+	}
+}
+.radio-poll input:checked ~ .radiobtn{
+  	background-color: transparent;
+    border: 2px solid #FF5000;
+}
+.radio-poll input:checked ~ .radiobtn:after {
+  	display: block;
+}
+.block-votar{
+	text-align: center;
+	a{
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		background: $colorAmerica;
+		padding: 0 35px;
+		font-size: 12px;
+		color: #fff;
+		font-weight: 700;
+		border-radius: 4px;
+		&:active,
+		&:focus,
+		&:hover{
+			opacity: 0.8;
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+}

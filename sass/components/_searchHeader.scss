@@ -1,0 +1,129 @@
+.searchbox{
+    position:absolute;
+    width:28px;
+    height:46px;
+    float:right;
+    overflow:hidden;
+    top: -2px;
+    right: 5px;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+.searchbox-input{
+    top:0;
+    right:0;
+    border:0;
+    outline:0;
+    width:0;
+    height:26px;
+    margin:0;
+    padding:0;
+    font-size:12px;
+    background: transparent;
+    color: #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+}
+.searchbox-input::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+.searchbox-input:-moz-placeholder {
+    color: #a8a8a8;
+}
+.searchbox-input::-moz-placeholder {
+    color: #a8a8a8;
+}
+.searchbox-input:-ms-input-placeholder {
+    color: #a8a8a8;
+}
+
+.searchbox-icon{
+    width:28px;
+    height:33px;
+    display:block;
+    position:absolute;
+    top:6px;
+    right:0;
+    padding:0;
+    margin:0;
+    border:0;
+    outline:0;
+    line-height:50px;
+    text-align:center;
+    cursor:pointer;
+    color:#dcddd8;
+    background: url(../img/ico-search.png?v1) no-repeat;
+    background-size: 35px;
+    background-position: 0 0;
+}
+.searchbox-submit{
+    display: none;
+}
+
+.searchbox-open{
+    width:298px;
+    background: #000000;
+    height: 46px;
+    padding: 0 40px 0 50px;
+    .searchbox-input{
+        width: 100%;
+    }
+    .searchbox-submit{
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 4px;
+        border: 0;
+        background: url(../img/ico-search.png?v1) no-repeat;
+        background-size: 35px;
+        background-position: 0 0;
+        width: 28px;
+        height: 33px;
+        padding: 0;
+    }
+    .searchbox-icon{
+        background: url(../img/ico-close.png?v1) no-repeat;
+        background-size: 14px;
+        background-position: 0 0;
+        width: 14px;
+        height: 14px;
+        top: 50%;
+        margin-top: -7px;
+        right: 12px;
+    }
+}
+
+.byline{
+  position:absolute;
+  top:150px;
+  left:30%;
+  text-align:center;
+  font-size:18px;
+}
+.byline a{
+  text-decoration:none;
+  color: #d74b4b;
+}
+.search-block{
+    height: 50px;
+    position: relative;
+}
+.stick,
+.page-detalle{
+    .searchbox-icon{
+        background: url(../img/ico-search.png?v1) no-repeat;
+        background-size: 35px;
+        background-position: 0 -33px;
+    }
+    .searchbox-open{
+        .searchbox-icon{
+            background: url(../img/ico-close.png?v1) no-repeat;
+            background-size: 14px;
+            background-position: 0 0;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.block-interest{
+	margin-bottom: 15px;
+	&>.row{
+		margin-left: -9px;
+		margin-right: -9px;
+		&>.col-md-4{
+			padding-left: 9px;
+			padding-right: 9px;
+		}
+	}
+	h3{
+		font-size: 30px;
+		font-weight: 700;
+		color: #222222;
+		margin-bottom: 15px;
+	}
+	article{
+		margin-bottom: 10px;
+		figure{
+			margin-bottom: 0;
+			a{
+				display: block;
+				img{
+					width: 100%;
+				}
+			}
+		}
+		.info-related{
+			padding: 13px 0;
+			h2{
+				height: 48px!important;
+				margin-bottom: 0;
+				a{
+					display: block;
+					font-size: 14px;
+					font-family: arial;
+					color: #000000;
+					&:active,
+					&:focus,
+					&:hover{
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}

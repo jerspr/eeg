@@ -1,0 +1,29 @@
+.inner-block-header-n{
+	height: 122px;
+	background: url(../img/bg-header-n.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	.time-header-n{
+		position: absolute;
+		left: 22px;
+		bottom: 15px;
+		span{
+			display: block;
+			font-size: 22px;
+			color: #fff;
+			font-weight: 700;
+		}
+		em{
+			font-style: normal;
+			display: block;
+			font-size: 12px;
+			color: #FFFFFF;
+			font-weight: 700;
+		}
+	}
+	.link-cap{
+		bottom: 40px;
+		right: 28px;
+		z-index: 9;
+	}
+}
