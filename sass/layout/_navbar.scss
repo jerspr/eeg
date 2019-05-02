@@ -267,6 +267,178 @@
 .list-product-tv{
   display: none;
 }
+/*Menu Movil*/
+.bre-close{
+  display: none;
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+  svg{
+    width: 100%;
+    vertical-align: top;
+    margin-top: 15px;
+  }
+}
+.sidenav{
+  height: 0;
+  width: 100%;
+}
+.sidenav{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #242424;
+  overflow: hidden;
+  transition: .3s;
+  border-radius: 0 0 4px 4px;
+}
+.overflowBody{
+  overflow: hidden;
+  .block-primary{
+    position: relative;
+    z-index: 99;
+  }
+  .bre-close{
+    display: block;
+  }
+  .bre-ico-l{
+    display: none;
+  }
+  .drop-logo-a{
+    display: none;
+  }
+  .list-product-tv{
+    display: block;
+    margin-left: 15px;
+    margin-top: 2px;
+  }
+  .link-m-tvgo{
+    svg{
+      .color-w{
+        fill: #fff!important;
+      }
+    }
+  }
+  .nav{
+    &.stick{
+      .bre-close{
+        margin-left: 15px;
+      }
+      .list-product-tv{
+        margin-top: 3px;
+      }
+    }
+  }
+}
+.list-product-tv{
+  display: none;
+  margin-left: 20px;
+  float: left;
+  margin-top: 3px;
+  ul{
+    li{
+      float: left;
+      margin-right: 20px;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        display: block;
+        width: 30px;
+        height: 30px;
+        svg{
+          width: 100%;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+.nav-m-show{
+  ul{
+    li{
+      margin-bottom: 25px;
+      a{
+        display: block;
+        text-transform: uppercase;
+        font-size: 32px;
+        color: #FFFFFF;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.inner-sidenav{
+  padding-top: 65px;
+  height: 100vh;
+}
+.scroll-auto-b{
+  height: 100%;
+  overflow-y: auto;
+  padding-left: 15px;
+  padding-bottom: 40px;
+}
+.nav-social-side{
+  padding-top: 25px;
+  ul{
+    li{
+      float: left;
+      margin-right: 20%;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        display: block;
+        svg{
+          width: 100%;
+          .svg-ico-fb,
+          .svg-ico-tw,
+          .svg-ico-it{
+            fill: #fff;
+          }
+        }
+        &.ico-fb{
+          width: 16px;
+        }
+        &.ico-tw{
+          width: 38px;
+        }
+        &.ico-it{
+          width: 32px;
+        }
+      }
+    }
+  }
+}
+.search-nav-m{
+  margin-bottom: 28px;
+  form{
+    position: relative;
+    input{
+      width: 100%;
+      background: transparent;
+      height: 50px;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #5F5B5B;
+      outline: 0;
+      padding: 10px 50px 10px 15px;
+      color: #fff;
+    }
+  }
+  button{
+    border: 0;
+    background: transparent;
+    outline: 0;
+    position: absolute;
+    top: 3px;
+    right: 0;
+  }
+}
 @media only screen and (max-width: 1200px) {
   
 }
@@ -314,27 +486,6 @@
       }
       .list-product-tv{
         display: block;
-        margin-left: 20px;
-        float: left;
-        margin-top: 3px;
-        ul{
-          li{
-            float: left;
-            margin-right: 20px;
-            &:last-child{
-              margin-right: 0;
-            }
-            a{
-              display: block;
-              width: 30px;
-              height: 30px;
-              svg{
-                width: 100%;
-                height: 30px;
-              }
-            }
-          }
-        }
       }
     }
   }
@@ -419,28 +570,31 @@
       }
     }
   }
-}
-.page-detalle{
-  .link-m-tvgo{
-    a{
+  .page-detalle{
+    .link-m-tvgo{
+      a{
+        svg{
+          .color-w{
+            fill: $colorAmerica;
+          }
+        }
+      }
+    }
+    .nav{
+      .block-primary{
+        padding: 12px 0;
+      }
+    }
+    .bre-ico-l{
       svg{
-        .color-w{
-          fill: $colorAmerica;
+        .svg-bre-ico{
+          fill: #8E8C8C;
         }
       }
     }
   }
-  .nav{
-    .block-primary{
-      padding: 12px 0;
-    }
-  }
-  .bre-ico-l{
-    svg{
-      .svg-bre-ico{
-        fill: #8E8C8C;
-      }
-    }
+  .active-menu {
+    height: 100vh!important
   }
 }
 @media only screen and (max-width: 768px) {
