@@ -37,11 +37,10 @@ footer{
     display: inline-block;
     vertical-align: middle;
     width: 28px;
-    height: 28px;
-    background: url(../img/logo-at.png?v1) no-repeat;
-    background-size: 28px;
-    background-position: 0 0;
     margin-right: 8px;
+    svg{
+      width: 100%;
+    }
   }
   &:active,
   &:focus,
@@ -49,7 +48,11 @@ footer{
     color: #FF5000;
     text-decoration: none;
     span{
-      background-position: 0 -28px;
+      svg{
+        .svg-logo-at{
+          fill: $colorAmerica;
+        }
+      }
     }
   }
 }
@@ -63,43 +66,148 @@ footer{
       margin-left: 40px;
       a{
         display: block;
+        svg{
+          width: 100%;
+        }
         &.ico-fb{
           width: 9px;
-          height: 15px;
-          background: url(../img/ico-fb.png?v1) no-repeat;
-          background-size: 9px;
-          background-position: 0 0;
           &:active,
           &:focus,
           &:hover{
-            background-position: 0 -15px;
+            svg{
+              .svg-ico-fb{
+                fill: #3B5998;
+              }
+            }
           }
         }
         &.ico-tw{
-          width: 16px;
-          height: 13px;
-          background: url(../img/ico-tw.png?v1) no-repeat;
-          background-size: 16px;
-          background-position: 0 0;
+          width: 18px;
           &:active,
           &:focus,
           &:hover{
-            background-position: 0 -13px;
+            svg{
+              .svg-ico-tw{
+                fill: #1DCAFF;
+              }
+            }
           }
         }
         &.ico-it{
-          width: 16px;
-          height: 16px;
-          background: url(../img/ico-it.png?v1) no-repeat;
-          background-size: 16px;
-          background-position: 0 0;
+          width: 17px;
           &:active,
           &:focus,
           &:hover{
-            background-position: 0 -16px;
+            svg{
+              .svg-ico-it{
+                fill: #C13584;
+              }
+            }
           }
         }
       }
     }
   }
+}
+.footer-nav-m{
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  
+}
+@media only screen and (max-width: 992px) {
+  .ads-block{
+    img{
+      width: 100%;
+    }
+  }
+  footer{
+    padding-top: 0;
+  }
+  .footer-none{
+    display: none;
+  }
+  .footer-nav-m{
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .block-footer{
+    padding: 15px 0;
+    .logo-footer{
+      float: left;
+      .social-footer{
+        ul{
+          li{
+            a{
+              &.ico-fb{
+                width: 12px;
+              }
+              &.ico-tw{
+                width: 29px;
+              }
+              &.ico-it{
+                width: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-list-nav-m{
+    border-bottom: 1px solid #F5F5F5;
+    &:last-child{
+      border-bottom: 0;
+    }
+    &>a{
+      display: block;
+      position: relative;
+      font-size: 14px;
+      color: #616161;
+      font-weight: 700;
+      padding: 20px 0;
+      &:active,
+      &:focus,
+      &:hover{
+        text-decoration: none;
+      }
+      i{
+        width: 7px;
+        position: absolute;
+        top: 50%;
+        margin-top: -3px;
+        right: 4px;
+        height: 12px;
+        svg{
+          width: 100%;
+          vertical-align: top;
+        }
+      }
+    }
+    .multi-collapse{
+      .list-menu-f{
+        li{
+          margin-bottom: 15px;
+          a{
+            font-size: 16px;
+            color: #9E9E9E;
+            display: block;
+            &:active,
+            &:focus,
+            &:hover{
+              color: #000000;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 480px) {
+
 }

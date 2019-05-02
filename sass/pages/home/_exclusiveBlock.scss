@@ -5,3 +5,26 @@
     margin-bottom: 0;
   }
 }
+@media only screen and (max-width: 1200px) {
+  
+}
+@media only screen and (max-width: 992px) {
+	.exclusive-block{
+		.item-article {
+		    margin-bottom: 35px;
+		}
+		.col-md-6{
+			&:last-child{
+				.item-article {
+				    margin-bottom: 0;
+				}		
+			}
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	
+}
+@media only screen and (max-width: 480px) {
+	
+}

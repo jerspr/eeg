@@ -12,7 +12,7 @@
         padding: 17px;
         .info-article{
           h2{
-            font-size: 14px;
+            font-size: 14px!important;
             font-weight: 700;
           }
         }
@@ -50,4 +50,22 @@
 }
 .ad-300{
   text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+  
+}
+@media only screen and (max-width: 992px) {
+  .ads-none{
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .inner-social-net-block{
+    .item-article{
+      margin-bottom: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  
 }

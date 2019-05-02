@@ -81,3 +81,24 @@
   background: url(../img/ico-video.png?v1) no-repeat;
   background-size: 100% 100%;
 }
+.inner-social-net-block{
+  .item-article{
+    &>a{
+      .inner-item-article{
+        background: #262626;
+        figure{
+          margin-bottom: 17px;
+          margin-left: -33px;
+          margin-top: -33px;
+        }
+        .info-article{
+          h2{
+            font-size: 12px!important;
+            color: #fff;
+            line-height: 160%;
+          }
+        }
+      }
+    }
+  }
+}

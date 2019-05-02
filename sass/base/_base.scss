@@ -77,3 +77,22 @@ body{
   padding-bottom: 28px;
   padding-top: 28px;
 }
+@media only screen and (max-width: 1200px) {
+  
+}
+@media only screen and (max-width: 992px) {
+  .container{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .space-block{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  
+}
+@media only screen and (max-width: 480px) {
+  
+}

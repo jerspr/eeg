@@ -1,4 +1,24 @@
 .the-last-block{
   padding: 38px 0;
-  background: #F0F0F0;
+}
+.page-interna{
+	.the-last-block{
+		padding-top: 0;
+	}
+}
+@media only screen and (max-width: 1200px) {
+  
+}
+@media only screen and (max-width: 992px) {
+	
+}
+@media only screen and (max-width: 768px) {
+	.inner-the-last-block{
+		.item-article{
+			margin-bottom: 32px;
+		}
+	}
+}
+@media only screen and (max-width: 480px) {
+	
 }

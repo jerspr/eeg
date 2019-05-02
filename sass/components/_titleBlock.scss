@@ -4,5 +4,34 @@
     color: $titleBlockColor;
     margin-bottom: 0;
     font-size: 32px;
+    a{
+    	display: inline-block;
+    	color: $titleBlockColor;
+    	font-size: 32px;
+    	&:active,
+    	&:focus,
+    	&:hover{
+    		font-weight: 700;
+    		text-decoration: none;
+    	}
+    }
   }
+}
+@media only screen and (max-width: 1200px) {
+  
+}
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 768px) {
+    .title-block{
+        h3{
+            a{
+                font-weight: 300;
+            }
+        }   
+    }
+}
+@media only screen and (max-width: 480px) {
+    
 }

@@ -120,3 +120,33 @@
     box-shadow: 5px 5px 0 rgba(137, 199, 122, 1);
   }
 }
+@media only screen and (max-width: 1200px) {
+  
+}
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 768px) {
+  .team-block{
+    padding: 10px 0;
+    background: transparent;
+  }
+  .item-team{
+    margin-left: -15px;
+    margin-right:-15px;
+    figure{
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+  }
+  .item-team{
+    &>a{
+      left: 50%;
+      bottom: 55px;
+      margin-left: -85px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  
+}
