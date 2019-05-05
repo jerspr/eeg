@@ -56,3 +56,27 @@
     color: #4777C6;
   }
 }
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 992px) {
+  .page-detalle{
+    .header-gr-detail{
+      margin-bottom: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .block-perfil-name{
+    width: 50%;
+  }
+  .inner-header-gr-detail{
+    p{
+      width: 50%;
+      float: left;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+
+}

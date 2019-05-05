@@ -333,3 +333,152 @@
 		}
 	}
 }
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 992px) {
+  	.page-nota{
+  		.block-header-n{
+  			padding-top: 0;
+  			height: 130px;
+  			margin-bottom: 55px;
+  		}
+  	}
+  	.inner-block-header-n{
+  		height: 130px;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    background-size: cover;
+	    background-position: center center;
+	    .time-header-n{
+	    	left: 4%;
+	    }
+	    .link-cap{
+	    	bottom: -60px;
+		    z-index: 2;
+		    right: initial;
+		    left: 50%;
+		    margin-left: -120px;
+	    }
+  	}
+  	.image-video-galeria{
+  		.inner-video-media{
+  			.cnt-img-video{
+  				.ico-n-video{
+					width: 80px;
+	  				height: 80px;
+	  				margin-top: -40px;
+	    			margin-left: -40px;
+  				}
+  			}
+  		}
+  	}
+}
+@media only screen and (max-width: 768px) {
+  	.inner-header-gr-detail{
+  		padding: 32px 0px 0;
+  		p{
+  			width: 50%;
+		    float: left;
+		    padding-left: 20px;
+		    margin-top: 0;
+  		}
+  	}
+  	.block-perfil-name{
+  		width: 50%;
+    	text-align: center;
+  	}
+  	.perfil-gr{
+  		width: 100%;
+	    float: inherit;
+	    margin-right: 0;
+	    display: inline-block;
+	    figure{
+	    	display: inline-block;
+    		margin-bottom: 5px;
+    		width: 132px;
+    		height: 132px;
+	    }
+  	}
+  	.name-gr{
+    	width: 100%;
+		margin-right: 0;
+		h2{
+			font-size: 22px;
+			font-weight: 700;
+		}
+		span{
+			font-size: 12px;
+		}
+    }
+    .cnt-bloque-w{
+		padding-right: 0;
+		padding-left: 0;
+    }
+    .cnt-bloque-s{
+    	width: 100%;
+    	margin-left: 0;
+    }
+    .body-nota{
+    	h1{
+    		font-size: 24px;
+    	}
+    }
+    .image-video-galeria{
+    	margin-left: -15px;
+    	margin-right: -15px;
+    	.inner-video-media{
+    		.cnt-img-video{
+    			.ico-n-video{
+    				width: 50px;
+    				height: 50px;
+    				margin-left: -25px;
+    				margin-top: -25px;
+    			}
+    		}
+    	}
+    }
+    .summary-item{
+    	border-left: 6px solid #ff5000;
+    	min-height: 53px;
+    	a{
+    		min-height: 53px;
+    		margin-left: 4px;
+    		figure{
+    			left: 4px;
+			    width: 94px;
+			    height: 53px;
+    		}
+			.title-summ{
+				padding-left: 106px;
+				span{
+					font-size: 10px;
+					margin-bottom: 2px;
+				}
+				h2{
+					font-size: 13px;
+				}
+			}
+    	}
+    }
+    .block-related{
+    	article{
+    		margin-bottom: 40px!important;
+		    box-shadow: 0 2px 2px rgba(0,0,0,0.16);
+		    border-radius: 0 0 5px 5px;
+		    .info-related{
+		    	padding: 20px 15px 20px;
+		    	h2{
+		    		a{
+		    			font-size: 16px!important;
+		    		}
+		    	}
+		    }
+    	}
+    }
+}
+@media only screen and (max-width: 480px) {
+
+}
+
