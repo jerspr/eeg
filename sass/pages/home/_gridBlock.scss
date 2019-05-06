@@ -95,7 +95,17 @@
   
 }
 @media only screen and (max-width: 992px) {
-  
+  .inner-grid-block{
+    &>.row {
+      margin-left: 0px;
+      margin-right: 0px;
+      &>.col-lg-5,
+      &>.col-lg-7{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
 }
 @media only screen and (max-width: 768px) {
   .inner-grid-block{
