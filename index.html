@@ -7,9 +7,13 @@
   <title>EEG</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="dist/css/plugins.min.css?v1">
-  <link rel="stylesheet" href="dist/css/style.min.css?v354">
+  <link rel="stylesheet" href="dist/css/style.min.css?v396">
 </head>
 <body>
+  <!--Demo eliminarlo-->
+  <div class="skin-desktop" style="background: url(dist/img/skin.png?v1)no-repeat;width: 1600px;height: 1000px;position: fixed;top: 0;left: 50%;margin-left: -800px;"></div>
+  <div class="top-banner-d" style="width: 970px;height: 89px;margin: 0 auto;text-align: center;position: relative;"></div>
+  <!--end-->
   <div id="main">
     <header class="nav stickit-nav">
       <div class="container">
@@ -89,16 +93,36 @@
               <li><a href="#">HORARIOS</a></li>
               <li><a href="#">PROGRAMAS</a></li>
               <li><a href="#">EBDT</a></li>
-              <li><a href="#">EEG</a></li>
+              <li><a href="#" class="active">EEG</a></li>
               <li><a href="#">SEÑORES PAPIS</a></li>
               <li><a href="#">DVAB</a></li>
               <li><a href="#">LOS VÍLCHEZ</a></li>
             </ul>
             <div class="search-block right">
               <form class="searchbox">
-                <input type="submit" class="searchbox-submit" value="">
+                <button type="submit" class="searchbox-submit" value="">
+                  <svg class="ico-search-submit" xmlns="http://www.w3.org/2000/svg" width="32.954" height="38.078" viewBox="0 0 32.954 38.078">
+                    <path class="svg-ico-search-submit" data-name="Unión 32" d="M70.569-1866.868v-13.2A9.508,9.508,0,0,1,62-1889.51a9.506,9.506,0,0,1,9.5-9.49,9.506,9.506,0,0,1,9.5,9.49,9.507,9.507,0,0,1-8.693,9.457v13.184a.868.868,0,0,1-.869.868A.868.868,0,0,1,70.569-1866.868Zm.931-14.887a7.767,7.767,0,0,0,7.761-7.754,7.766,7.766,0,0,0-7.761-7.754,7.767,7.767,0,0,0-7.761,7.754,7.767,7.767,0,0,0,7.7,7.754H71.5Z" transform="translate(895.806 1685.082) rotate(-30)" fill="#fff"/>
+                  </svg>
+                </button>
                 <input type="search" placeholder="Buscar" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
-                <span class="searchbox-icon"></span>
+                <span class="searchbox-icon">
+                  <svg class="ico-search-show" xmlns="http://www.w3.org/2000/svg" width="32.954" height="38.078" viewBox="0 0 32.954 38.078">
+                    <path class="svg-ico-search-show" data-name="Unión 32" d="M70.569-1866.868v-13.2A9.508,9.508,0,0,1,62-1889.51a9.506,9.506,0,0,1,9.5-9.49,9.506,9.506,0,0,1,9.5,9.49,9.507,9.507,0,0,1-8.693,9.457v13.184a.868.868,0,0,1-.869.868A.868.868,0,0,1,70.569-1866.868Zm.931-14.887a7.767,7.767,0,0,0,7.761-7.754,7.766,7.766,0,0,0-7.761-7.754,7.767,7.767,0,0,0-7.761,7.754,7.767,7.767,0,0,0,7.7,7.754H71.5Z" transform="translate(895.806 1685.082) rotate(-30)" fill="#fff"/>
+                  </svg>
+                  <svg class="ico-close-search" data-name="Grupo 3495" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13.5" height="13.5" viewBox="0 0 13.5 13.5">
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect id="Rectángulo_5406" data-name="Rectángulo 5406" width="13.5" height="13.5" fill="#fff"/>
+                      </clipPath>
+                    </defs>
+                    <g id="Grupo_2855" data-name="Grupo 2855">
+                      <g id="Grupo_2854" data-name="Grupo 2854" clip-path="url(#clip-path)">
+                        <path class="svg-ico-close-search" data-name="Trazado 10636" d="M6.055,6.683.139,12.573a.442.442,0,0,0,0,.6.419.419,0,0,0,.287.13.419.419,0,0,0,.287-.13L6.654,7.23,12.6,13.172a.38.38,0,0,0,.573,0,.441.441,0,0,0,0-.6L7.332,6.683,13.222.767a.441.441,0,0,0,0-.6.441.441,0,0,0-.6,0L6.681,6.135.738.167a.441.441,0,0,0-.6,0,.417.417,0,0,0,0,.6Zm0,0" transform="translate(-0.009 -0.037)" fill="#fff"/>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
               </form>
             </div>
             <div class="right link-m-tvgo">
@@ -189,7 +213,7 @@
     <section class="wrapper">
       <div class="clear-fix banner-block">
         <div class="container">
-          <div class="inner-banner-block clear-fix">
+          <div class="inner-banner-block clear-fix" style="background: url(dist/img/bg-eeg.jpg?v1) no-repeat;background-size: cover;background-position: center center;">
             <img src="dist/img/bg-eeg.jpg" alt="">
             <div class="name-program">
               <h2>Esto es guerra</h2>
@@ -206,7 +230,7 @@
               <div class="col-lg-5">
                 <div class="clear-fix item-grid">
                   <a href="#">
-                    <figure>
+                    <figure style="background: url(dist/img/g1.jpg) no-repeat;background-size: cover;background-position: center center;">
                       <img src="dist/img/g1.jpg" alt="">
                     </figure>
                     <div class="bg-item-g"></div>
@@ -216,7 +240,7 @@
               </div>
               <div class="col-lg-7">
                 <div class="row custom-row-s">
-                  <div class="col-lg-6">
+                  <div class="col-md-12 col-lg-6">
                     <div class="clear-fix item-grid item-grid-bg">
                       <a href="#">
                         <figure style="background: url(dist/img/g2.jpg) no-repeat;background-size: cover;background-position: center center;">
@@ -227,7 +251,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-md-12 col-lg-6">
                     <div class="clear-fix item-grid item-grid-bg">
                       <a href="#">
                         <figure style="background: url(dist/img/g2.jpg) no-repeat;background-size: cover;background-position: center center;">

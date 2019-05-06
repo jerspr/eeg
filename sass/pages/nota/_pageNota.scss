@@ -220,8 +220,42 @@
 .block-sint{
 	margin-bottom: 20px;
 	height: 90px;
-	background: url(../img/bg-sint.png?v1) no-repeat;
+	background: rgb(0,0,0);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,80,0,1) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,80,0,1) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,80,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ff5000',GradientType=1 );
 	position: relative;
+	border-radius: 3px;
+	.logo-tvgo-n{
+		width: 103px;
+		height: 53px;
+		background: url(../img/logo-tvgo-n.svg?v1) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top: 19px;
+		left: 19px;
+	}
+	em{
+		width: 102px;
+		color: #fff;
+		font-size: 15px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: 150%;
+		position: absolute;
+	    left: 145px;
+	    top: 23px;
+	}
+	.logo-bg-tvgo{
+		width: 106px;
+		height: 44px;
+		background: url(../img/logo-bg-tvgo.svg?v1) no-repeat;
+		background-size: 100% 100%; 
+		position: absolute;
+		top: 20px;
+		left: 265px;
+	}
 	.btn-sint{
 		height: 40px;
 		border: 1px solid #FFFFFF;
@@ -372,6 +406,41 @@
 	    			margin-left: -40px;
   				}
   			}
+  		}
+  	}
+  	.block-sint{
+  		height: 250px;
+  		background: -moz-linear-gradient(left, rgba(0,0,0,0.8) 0%, rgba(255,80,0,1) 100%);
+		background: -webkit-linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(255,80,0,1) 100%);
+		background: linear-gradient(to right, rgba(0,0,0,0.8) 0%,rgba(255,80,0,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#ff5000',GradientType=1 );
+  		.logo-tvgo-n{
+  			position: initial;
+		    float: left;
+		    margin-top: 23px;
+		    margin-left: 23px;
+  		}
+  		em{
+  			width: 130px;
+		    text-align: center;
+		    position: initial;
+		    float: right;
+		    margin-right: 35px;
+		    margin-top: 25px;
+  		}
+  		.logo-bg-tvgo{
+  			width: 214px;
+    		height: 88px;
+    		top: 80px;
+		    left: 50%;
+		    margin-left: -107px;
+  		}
+  		.btn-sint{
+  			top: initial;
+		    bottom: 15px;
+		    left: 50%;
+		    right: initial;
+		    margin-left: -110px;
   		}
   	}
 }
