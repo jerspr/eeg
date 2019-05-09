@@ -3,6 +3,7 @@ var obj = {
 		obj.stickitHeader();
 		obj.searchExpand();
         obj.navMenu();
+        obj.hoverGrid();
 	},
 	stickitHeader: function(){
 		$('.nav').stickit({extraHeight: 0});
@@ -67,8 +68,16 @@ var obj = {
                 submitIcon.click();
             }
         });
-
-	}
+	},
+    hoverGrid: function(){
+        if($(".grid-container").length){
+            $(".grid-container").mouseover(function() {
+                $(this).find(".item-first").removeClass("item-grid-bg");
+            }).mouseout(function() {
+                $(this).find(".item-first").addClass("item-grid-bg");
+            });
+        }
+    }
 }
 $(document).ready(function(){
 	obj.init();
