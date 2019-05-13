@@ -50,6 +50,12 @@
 			    	color: #FFFFFF;
 			    	font-weight: 600;
 			    	display: inline-block;
+			    	&:focus,
+				    &:hover,
+				    &:active{
+				    	background: #000000;
+				    	border: 1px solid #000000;
+				    }
 			    }
 			}
 		}
@@ -57,7 +63,7 @@
 }
 .social-poll{
 	position: absolute;
-	bottom: 30px;
+	bottom: 35px;
 	right: 15px;
 	ul{
 		li{
@@ -70,13 +76,61 @@
 				display: block;
 				width: 30px;
 				height: 30px;
+				border: 2px solid #AAAAAA;
+				border-radius: 50%;
+				text-align: center;
 				&.poll-fb{
-					background: url(../img/poll-fb.png?v1) no-repeat;
-					background-size: 100% 100%;
+					svg{
+						width: 8px;
+    					margin-top: 1px;
+					}
+					.svg-ico-fb{
+						fill: #AAAAAA;
+					}
+					&:focus{
+						.svg-ico-fb{
+							fill: #fff;
+						}	
+					}
+					&:hover{
+						.svg-ico-fb{
+							fill: #fff;
+						}	
+					}
+					&:active{
+						.svg-ico-fb{
+							fill: #fff;
+						}	
+					}
 				}
 				&.poll-tw{
-					background: url(../img/poll-tw.png?v1) no-repeat;
-					background-size: 100% 100%;	
+					svg{
+						width: 15px;
+    					margin-top: 1px;
+					}
+					.svg-ico-tw{
+						fill: #AAAAAA;
+					}
+					&:focus{
+						.svg-ico-tw{
+							fill: #fff;
+						}	
+					}
+					&:hover{
+						.svg-ico-tw{
+							fill: #fff;
+						}	
+					}
+					&:active{
+						.svg-ico-tw{
+							fill: #fff;
+						}	
+					}
+				}
+				&:focus,
+				&:hover,
+				&:active{
+					border: 2px solid #fff;
 				}
 			}
 		}
